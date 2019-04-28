@@ -17,6 +17,6 @@ model = gensim.models.Word2Vec(
 	min_count=2,
 	workers=6
 )
-model.train(data["headline"], total_examples=len(data["headline"], epochs=10))
+model.train(data["headline"], total_examples=len(data["headline"]), epochs=10)
 w1 = "praise"
 model.wv.most_similar(positive=w1)
